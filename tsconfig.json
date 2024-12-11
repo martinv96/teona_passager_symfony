@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+      "target": "ES5", 
+      "lib": ["dom", "esnext"],
+      "jsx": "react-jsx", 
+      "module": "ESNext",
+      "moduleResolution": "node",
+      "esModuleInterop": true,
+      "skipLibCheck": true,
+      "allowSyntheticDefaultImports": true,
+      
+      // Ajout des options pour améliorer la gestion des erreurs
+      "forceConsistentCasingInFileNames": true,
+      "strict": true
+    },
+    "include": ["src/**/*", "assets/js/**/*"], 
+    "exclude": ["node_modules"]
+  }
+  
