@@ -1,10 +1,10 @@
-"use client";
 import React, { useState } from "react";
 import SearchBar from "./SearchBar";
 import { FaPlane, FaHotel, FaCar, FaShip } from "react-icons/fa";
 import InteractiveMap from "./InteractiveMap";
 
 const HomePage = () => {
+  console.log("HomePage chargé"); 
   const [isSidebarVisible] = useState(true);
 
   return (

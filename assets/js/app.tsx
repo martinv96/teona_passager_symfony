@@ -17,4 +17,9 @@ const App = () => {
   );
 };
 
+<script>
+  console.log("Symfony et Twig sont fonctionnels !");
+</script>
+
+
 export default App;

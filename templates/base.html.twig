@@ -1,18 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>
-			{% block title %}Teona Passager
-			{% endblock %}
-		</title>
-		<link rel="stylesheet" href="{{ asset('build/style.css') }}">
-	</head>
-	<body>
-		<div id="root"></div>
-		<script src="{{ asset('build/runtime.js') }}"></script>
-		<script src="{{ asset('build/app.js') }}"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Teona Passager{% endblock %}</title>
+    <link rel="stylesheet" href="{{ asset('build/style.css') }}"> <!-- Chargement CSS -->
+</head>
+<body>
+    <div id="root"></div> <!-- Le conteneur React -->
 
-	</body>
+    <script src="{{ asset('build/runtime.js') }}"></script> <!-- Runtime JS -->
+    <script src="{{ asset('build/app.js') }}"></script> <!-- Fichier principal React -->
+</body>
 </html>

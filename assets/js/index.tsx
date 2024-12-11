@@ -2,10 +2,16 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./app";
 
-const root = ReactDOM.createRoot(document.getElementById("root") as HTMLElement);
+console.log("React démarre..."); // Message de débogage
 
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+const rootElement = document.getElementById("root");
+if (!rootElement) {
+  console.error("Erreur : élément avec id 'root' introuvable !");
+} else {
+  const root = ReactDOM.createRoot(rootElement);
+  root.render(
+    <React.StrictMode>
+      <App />
+    </React.StrictMode>
+  );
+}

@@ -1,6 +1,5 @@
 <?php
 
-// src/Controller/DefaultController.php
 namespace App\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
@@ -9,7 +8,7 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class DefaultController extends AbstractController
 {
-    #[Route('/', name: 'app_home')]
+    #[Route('/{reactRouting}', name: 'app_home', requirements: ['reactRouting' => '.*'])]
     public function index(): Response
     {
         return $this->render('base.html.twig');
